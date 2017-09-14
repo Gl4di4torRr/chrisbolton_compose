@@ -1,0 +1,17 @@
+version: '3'
+services:
+  web1:
+    image: "gl4di4torrr/chrisbolton-ui"
+    ports:
+     - "5000:5000"
+    container_name: chrisbolton-ui
+  web2:
+    image: "gl4di4torrr/chrisbolton-service"
+    ports:
+     - "8080:8080"
+    container_name: chrisbolton-service
+  db:
+    image: "gl4di4torrr/chrisbolton-mysql"
+    volumes:
+     - /Users/Bolton/chrisbolton-data:/var/lib/mysql
+    container_name: chrisbolton-mysql
