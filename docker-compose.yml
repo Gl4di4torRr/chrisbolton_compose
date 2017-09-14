@@ -13,5 +13,5 @@ services:
   db:
     image: "gl4di4torrr/chrisbolton-mysql"
     volumes:
-     - /Users/Bolton/chrisbolton-data:/var/lib/mysql
+     - /var/opt/data:/var/lib/mysql
     container_name: chrisbolton-mysql
